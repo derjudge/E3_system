@@ -1,24 +1,33 @@
-## Système E3
+# Système E3
 
-J'essaie de concevoir un système simple mais simulationniste.
-Le principe de résolution se base sur une transcription de la mesure de Elo en échec.
-Le score Elo mesure notre capacité à jouer aux échecs. Une fois qu'on a joué une dizaine de parties sur chess.com on a une bonne évaluation de notre compétence "échecs" 
-sur notre fiche de personnage.
- 
-En Elo si on a deux adversaires Alice et Bob, dont le talent est mesuré par les scores de Elo de a et b respectivement,
-alors la probabilité pour Alice de gagner est :
-P(a, b) = 1/(1 + 10 ^ ((B - A) / k))
-où k est une constante qui dépend de l'échelle de notre Elo.
-Pour notre système E3 on va avoir k = 5. Pour information le k utilisé aux échecs est k=400.
+Le **système E3** propose une mécanique simple mais simulationniste, inspirée du célèbre système Elo utilisé dans le classement des joueurs d’échecs.
 
-Ainsi si Alice et Bob se confrontent à l'escrime et que Alice a 17 en escrime et Bob a 15 on arriverait à une victoire d'Alice avec une probabilité de 
-1/(1 + 10^((15-17)/5)) =  0.715% avec le système Elo.
+Dans le cadre des échecs, le score Elo d’un joueur représente sa compétence à ce jeu. Une dizaine de parties suffisent généralement pour obtenir une évaluation fiable de cette compétence, qui pourrait être le score qui figure sur une fiche de personnage.
 
-Pour simuler ça avec le système E3, Alice va lancer 3d6 et ajouter à sa compétence (17) tandis que Bob va lancer 3d6 et additioner le résultat à sa compétence (15).
-En cas d'égalité on peut considérer qu'un tour est perdu et qu'il n'y a pas de gagnant dans la passe d'armes.
-On voit que la probabilité d'avoir le score de Bob strictement supérieur au score de Alice est de 0.28 soit quasiment la probabilité qui a été calculée avec le système Elo.
+## Le principe d'Elo appliqué
 
-Pour faire la translation entre le système Elo aux échecs et le système E3 faite (Elo/80) - 10
+Dans le système Elo, si deux adversaires, Alice et Bob, possèdent des scores Elo respectifs de \( A \) et \( B \), la probabilité qu’Alice l’emporte est donnée par la formule suivante :  
+\[ P(A, B) = \frac{1}{1 + 10^{\frac{B - A}{k}}} \]  
+où \( k \) est une constante définissant l’échelle de mesure, pour les échecs, \( k = 400 \). Dans le système E3, nous fixons \( k = 5 \) pour rendre le système utilisable avec nos dés.
+
+**Exemple :**  
+Si Alice possède une compétence d’escrime de 17 et Bob une compétence de 15, la probabilité qu’Alice l’emporte selon la formule est :  
+\[ P(17, 15) = \frac{1}{1 + 10^{\frac{15 - 17}{5}}} \approx 71,5\% \]
+
+## Résolution avec le système E3
+
+Pour traduire cette probabilité en jeu, chaque personnage lance **3d6** et ajoute le résultat à son score de compétence. Voici comment cela fonctionne dans notre exemple :
+
+- **Alice** : lance \( 3d6 \) et ajoute 17 (sa compétence d’escrime).  
+- **Bob** : lance \( 3d6 \) et ajoute 15 (sa compétence d’escrime).  
+
+Le vainqueur est celui qui obtient le score final le plus élevé.  
+
+- En cas d’égalité, l’action peut être considérée comme un échec mutuel ou une impasse (selon le contexte narratif).  
+
+Cette méthode produit une distribution probabiliste des résultats qui correspond étroitement à celle calculée avec le système Elo. Pour notre exemple, la probabilité que Bob dépasse Alice reste très proche de 28 %, comme attendu.
+
+Pour faire la translation entre le système Elo aux échecs et le système E3 faites simplement  \[ \frac{Elo}{80} - 10 \]
 Débutant un peu nul : 0
 Débutant avec quelques parties : 2
 Joueur Amateur : 5
@@ -41,17 +50,23 @@ amateur éclairé (quelques centaines d'heures) : 10
 professionnel moyen, doctorant : 13
 professionnel, top 10% : 15
 professionnel, parmi les top 0.1% : 20
-The GOAT : 25+ 
+The GOAT : 25+
 
 
-Echelle de difficulté fixe :
-Facile (faisable avec 50% de chance un débutant) : 10
-Typique (un débutant a peu de chance, un professionnel y arrive sans problème) : 15
-Difficile (quelqu'un avec un millier d'heure d'entrainement y arrive avec 50% de chance) : 20
-Très difficile (les professionnels y arrivent avec seulement 50% de chance) : 25
-Héroïque (les meilleurs professionnels y arrivent avec seulement 50% de chance) : 30
-Très héroïque (le meilleur du monde y arrive avec 50% de chance, mais il est très bon) : 35 
+## Difficultés et Résolution des Obstacles
 
-Imprévu : 
-quand les trois dés ont le même résultat (2,77% si vous voulez savoir) il se passe un truc cool.
-Si c'est un échec alors c'est un échec critique, si c'est un succès alors c'est un succés critique.
+Le système E3 ne se limite pas aux affrontements entre deux personnages. Lorsqu’un personnage doit surmonter un obstacle, on évalue son score par rapport à une difficulté fixe. Voici une échelle de référence pour les niveaux de difficulté :
+
+### Échelle de Difficulté Fixe
+- **Facile** : Faisable avec 50 % de chance pour un débutant. *(Difficulté : 10)*  
+- **Typique** : Accessible pour un professionnel, mais difficile pour un débutant. *(Difficulté : 15)*  C'est le score de difficulté par défaut.
+- **Difficile** : Nécessite environ mille heures d’entraînement pour réussir avec 50 % de chance. *(Difficulté : 20)*  
+- **Très difficile** : Seuls les professionnels expérimentés y parviennent avec 50 % de chance. *(Difficulté : 25)*  
+- **Héroïque** : Les meilleurs professionnels réussissent avec 50 % de chance. *(Difficulté : 30)*  
+- **Très héroïque** : Une réussite à 50 % pour le meilleur du monde, d’un niveau exceptionnel. *(Difficulté : 35)*  
+
+### Imprévus : Succès et Échecs Critiques
+Lorsque les **trois dés affichent le même résultat** (par exemple, trois 4 ou trois 6), un événement spécial se produit. La probabilité d’un tel imprévu est de **2,77 %**.
+
+- **En cas d’échec** : Il s’agit d’un **échec critique**. Une malchance notable frappe le personnage, avec des conséquences narratives ou mécaniques selon la situation.  
+- **En cas de succès** : Il s’agit d’un **succès critique**. Le personnage obtient un avantage significatif, apportant un bonus ou un effet supplémentaire selon le contexte.
