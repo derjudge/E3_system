@@ -7,12 +7,12 @@ Dans le cadre des échecs, le score Elo d’un joueur représente sa compétence
 ## Le principe d'Elo appliqué
 
 Dans le système Elo, si deux adversaires, Alice et Bob, possèdent des scores Elo respectifs de $A$ et $B$, la probabilité qu’Alice l’emporte est donnée par la formule suivante :  
-$ P(A, B) = \frac{1}{1 + 10^{\frac{B - A}{k}}} $ 
+$P(A, B) = \frac{1}{1 + 10^{\frac{B - A}{k}}}$ 
 où $k$) est une constante définissant l’échelle de mesure, pour les échecs, $k = 400$. Dans le système E3, nous fixons $k = 5$ pour rendre le système utilisable avec nos dés.
 
 **Exemple :**  
 Si Alice possède une compétence d’escrime de 17 et Bob une compétence de 15, la probabilité qu’Alice l’emporte selon la formule est :  
-$ P(17, 15) = \frac{1}{1 + 10^{\frac{15 - 17}{5}}} \approx 71,5\% $
+$P(17, 15) = \frac{1}{1 + 10^{\frac{15 - 17}{5}}} \approx 71,5\%$
 
 ## Résolution avec le système E3
 
