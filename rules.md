@@ -29,29 +29,29 @@ Le vainqueur est celui qui obtient le score final le plus élevé.
 Cette méthode produit une distribution probabiliste des résultats qui correspond étroitement à celle calculée avec le système Elo. Pour notre exemple, la probabilité que Bob dépasse Alice reste très proche de 28 %, comme attendu.
 
 Pour faire la translation entre le système Elo aux échecs et le système E3 faites simplement  $\frac{Elo}{80} - 10$
-Débutant un peu nul : 0
-Débutant avec quelques parties : 2
-Joueur Amateur : 5
-Joueur intermédiaire : 8
-Bon joueur de club : 10
-Très bon joueur de club : 13
-Candidat maître : 17
-Maître : 19
-maître international : 20
-grand maître international : 21
-Magnus Carlsen : 26
-Stockfish : 32
-Alphazero : 45
+  - Débutant un peu nul : 0
+  - Débutant avec quelques parties : 2
+  - Joueur Amateur : 5
+  - Joueur intermédiaire : 8
+  - Bon joueur de club : 10
+  - Très bon joueur de club : 13
+  - Candidat maître : 17
+  - Maître : 19
+  - Maître international : 20
+  - Grand Maître International : 21
+  - Magnus Carlsen : 26
+  - Stockfish : 32
+  - Alphazero : 45
 
 Pour mesurer l'échelle des compétences sur autre chose que les échecs :
-débutant nul : 0
-amateur (quelques dizaines d'heures) : 3
-amateur intermédiare (une centaine d'heures d'étude et de pratiques) : 6
-amateur éclairé (quelques centaines d'heures) : 10
-professionnel moyen, doctorant : 13
-professionnel, top 10% : 15
-professionnel, parmi les top 0.1% : 20
-The GOAT : 25+
+  - débutant nul : 0
+  - amateur (quelques dizaines d'heures) : 3
+  - amateur intermédiare (une centaine d'heures d'étude et de pratiques) : 6
+  - amateur éclairé (quelques centaines d'heures) : 10
+  - professionnel moyen, doctorant : 13
+  - professionnel, top 10% : 15
+  - professionnel, parmi les top 0.1% : 20
+  - The GOAT : 25+
 
 
 ## Difficultés et Résolution des Obstacles
