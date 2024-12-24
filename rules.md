@@ -6,13 +6,13 @@ Dans le cadre des échecs, le score Elo d’un joueur représente sa compétence
 
 ## Le principe d'Elo appliqué
 
-Dans le système Elo, si deux adversaires, Alice et Bob, possèdent des scores Elo respectifs de \( A \) et \( B \), la probabilité qu’Alice l’emporte est donnée par la formule suivante :  
-\[ P(A, B) = \frac{1}{1 + 10^{\frac{B - A}{k}}} \]  
-où \( k \) est une constante définissant l’échelle de mesure, pour les échecs, \( k = 400 \). Dans le système E3, nous fixons \( k = 5 \) pour rendre le système utilisable avec nos dés.
+Dans le système Elo, si deux adversaires, Alice et Bob, possèdent des scores Elo respectifs de $A$ et $B$, la probabilité qu’Alice l’emporte est donnée par la formule suivante :  
+$ P(A, B) = \frac{1}{1 + 10^{\frac{B - A}{k}}} $ 
+où $k$) est une constante définissant l’échelle de mesure, pour les échecs, $k = 400$. Dans le système E3, nous fixons $k = 5$ pour rendre le système utilisable avec nos dés.
 
 **Exemple :**  
 Si Alice possède une compétence d’escrime de 17 et Bob une compétence de 15, la probabilité qu’Alice l’emporte selon la formule est :  
-\[ P(17, 15) = \frac{1}{1 + 10^{\frac{15 - 17}{5}}} \approx 71,5\% \]
+$ P(17, 15) = \frac{1}{1 + 10^{\frac{15 - 17}{5}}} \approx 71,5\% $
 
 ## Résolution avec le système E3
 
@@ -27,7 +27,7 @@ Le vainqueur est celui qui obtient le score final le plus élevé.
 
 Cette méthode produit une distribution probabiliste des résultats qui correspond étroitement à celle calculée avec le système Elo. Pour notre exemple, la probabilité que Bob dépasse Alice reste très proche de 28 %, comme attendu.
 
-Pour faire la translation entre le système Elo aux échecs et le système E3 faites simplement  \[ \frac{Elo}{80} - 10 \]
+Pour faire la translation entre le système Elo aux échecs et le système E3 faites simplement  $ \frac{Elo}{80} - 10 $
 Débutant un peu nul : 0
 Débutant avec quelques parties : 2
 Joueur Amateur : 5
