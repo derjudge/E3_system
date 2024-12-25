@@ -26,9 +26,12 @@ Le vainqueur est celui qui obtient le score final le plus élevé.
 
 - En cas d’égalité, l’action peut être considérée comme un échec mutuel ou une impasse (selon le contexte narratif).  
 
-Cette méthode produit une distribution probabiliste des résultats qui correspond étroitement à celle calculée avec le système Elo. Pour notre exemple, la probabilité que Bob dépasse Alice reste très proche de 28 %, comme attendu.
+Cette méthode produit une distribution probabiliste des résultats qui correspond étroitement à celle calculée avec le système Elo. 
+Pour notre exemple, la probabilité que Bob dépasse Alice reste très proche de 28 %, comme attendu.
 
-Pour faire la translation entre le système Elo aux échecs et le système E3 faites simplement  $\frac{Elo}{80} - 10$
+En fait, le delta entre les deux probabilités (celle attendue par le système Elo et celle obtenue par le lancer des dés) est toujours inférieure à 2,15%.
+
+Pour faire la translation entre le système Elo aux échecs et le système E3 on peut faire simplement  $\frac{Elo}{80} - 10$. Ce qui donne :
   - Débutant un peu nul : 0
   - Débutant avec quelques parties : 2
   - Joueur Amateur : 5
@@ -43,7 +46,7 @@ Pour faire la translation entre le système Elo aux échecs et le système E3 fa
   - Stockfish : 32
   - Alphazero : 45
 
-Pour mesurer l'échelle des compétences sur autre chose que les échecs :
+Pour mesurer l'échelle des compétences sur autre chose que les échecs, on peut s'inspirer de la précédente table et avoir :
   - débutant nul : 0
   - amateur (quelques dizaines d'heures) : 3
   - amateur intermédiare (une centaine d'heures d'étude et de pratiques) : 6
@@ -71,3 +74,31 @@ Lorsque les **trois dés affichent le même résultat** (par exemple, trois 4 ou
 
 - **En cas d’échec** : Il s’agit d’un **échec critique**. Une malchance notable frappe le personnage, avec des conséquences narratives ou mécaniques selon la situation.  
 - **En cas de succès** : Il s’agit d’un **succès critique**. Le personnage obtient un avantage significatif, apportant un bonus ou un effet supplémentaire selon le contexte.
+
+
+# Système E3
+
+Le système E3 repose sur des caractèristiques, représentant les capacités et les facilités du personnage et une liste de compétences, correspondant à ses acquis.
+Si vous voulez composer votre propre système E3, en tant que MJ, à vous de choisir votre propre liste de compétences et de caractéristiques.
+Les caractéristiques devrait avoir un score entre -3 (très faible) et +3 (très fort), passant par 0 (moyen). Elles ne peuvent quasiment pas évoluer dans la progression de la campagne. 
+Tandis que les compétences ont une échelle ouverte commençant à 0 et n'ayant pas de maximum théorique.
+
+E3 a été pensé pour être un système alternatif à ars magica 5eme édition et pour avoir une correspondance entre les deux systèmes.
+Pour une compétence de Ars Magica vers E3, muliplié la compétence par 10 et diviser le résultat par 3 (et arrondir au plus proche).
+  * 0 -> 0
+  * 1 -> 3
+  * 2 -> 6
+  * 3 -> 10
+  * 4 -> 13
+  * 5 -> 17
+  * 6 -> 20
+
+Pour calculer le score final pour un test de caractéristiques faites : 
+
+compétence + caractéristiques + 3d6
+
+ 
+
+
+
+
