@@ -70,16 +70,20 @@ Le système E3 ne se limite pas aux affrontements entre deux personnages. Lorsqu
 - **Héroïque** : Les meilleurs professionnels réussissent avec 50 % de chance. *(Difficulté : 30)*  
 - **Très héroïque** : Une réussite à 50 % pour le meilleur du monde, d’un niveau exceptionnel. *(Difficulté : 35)*  
 
-### Imprévus : Succès et Échecs Critiques
+### Imprévus : Succès et Échecs Critiques ("Oui Et" et "Non Et")
 Lorsque les **trois dés affichent le même résultat** (par exemple, trois 4 ou trois 6), un événement spécial se produit. La probabilité d’un tel imprévu est de **2,77 %**.
 
 - **En cas d’échec** : Il s’agit d’un **échec critique**. Une malchance notable frappe le personnage, avec des conséquences narratives ou mécaniques selon la situation.  
 - **En cas de succès** : Il s’agit d’un **succès critique**. Le personnage obtient un avantage significatif, apportant un bonus ou un effet supplémentaire selon le contexte.
 
+### Succès et Echec partiel ("Non Mais" et "Oui Mais")
+Lorsque les **trois dés affichent une suite** (1-2-3, 2-3-4, 3-4-5 ou 4-5-6), un événement vient modérer le résultat. La probabilité d'un tel imprévu est **11,11%**.
+Généralement, le succès vient avec un prix et les échecs viennent avec une petite compensation. 
 
-# Système E3
 
-Le système E3 repose sur des caractèristiques, représentant les capacités et les facilités du personnage et une liste de compétences, correspondant à ses acquis.
+# Système E3 pour Ars Magica
+
+Le système E3 repose sur des caractèristiques, représentant les capacités et les facilités du personnage et sur une liste de compétences, correspondant à ses acquis.
 Si vous voulez composer votre propre système E3, en tant que MJ, à vous de choisir votre propre liste de compétences et de caractéristiques.
 Les caractéristiques devrait avoir un score entre -3 (très faible) et +3 (très fort), passant par 0 (moyen). Elles ne peuvent quasiment pas évoluer dans la progression de la campagne. 
 Tandis que les compétences ont une échelle ouverte commençant à 0 et n'ayant pas de maximum théorique.
@@ -98,7 +102,45 @@ Pour calculer le score final pour un test de caractéristiques faites :
 
 compétence + caractéristiques + 3d6
 
- 
+Pour créer un personnage débutant, distribuer 7 points de caractéristiques parmi les 8 caractéristiques.
+
+| score | coût |
+|:--:|:--:|
+| -3 | -6 |
+| -2 | -3 |
+| -1 | -1 |
+| 0 | 0 |
+| +1 | 1 |
+| +2 | 2 |
+| +3 | 3 |
+
+Puis distribuer un certain nombre de points d'expérience qui dépend de la nature de vos personnages : 
+| nature | nombre de points de caractéristiques |
+|:-|:-|
+| débutant | 350 |
+| aguerri | 450 |
+| vétéran | 600 |
+| héroïque | 800 |
+| légendaire | 1000 |
+
+| score | coût |
+|:--:|:--:|
+| 1 | 1 |     
+| 2 | 3 |     
+| 3 | 6 |     
+| 4 | 10 |    
+| 5 | 15 |    
+| 6 | 21 |    
+| 7 | 28 |    
+| 8 | 36 |    
+| 9 | 45 |    
+| 10 | 55 |   
+| 11 | 66 |   
+| 12 | 78 |   
+| 13 | 91 |   
+| 14 | 105 |  
+| 15 | 120 |  
+| $n$ | $n \times (n + 1)$ |
 
 
 
