@@ -115,13 +115,13 @@ Pour créer un personnage débutant, distribuer 7 points de caractéristiques pa
 | +3 | 3 |
 
 Puis distribuer un certain nombre de points d'expérience qui dépend de la nature de vos personnages : 
-| nature | nombre de points de compétences |
-|:-|:-|
-| débutant | 350 |
-| aguerri | 450 |
-| vétéran | 600 |
-| héroïque | 800 |
-| légendaire | 1000 |
+| nature | nombre de points de compétences | Niveau maximum de compétence |
+|:-|:-|:-|
+| débutant | 350 | 10 |
+| aguerri | 450 | 14 |
+| vétéran | 600 | 18 |
+| héroïque | 800 | 22 |
+| légendaire | 1000 | - |
 
 | score | coût |
 |:--:|:--:|
