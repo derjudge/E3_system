@@ -7,9 +7,9 @@ Dans le cadre des échecs, le score Elo d’un joueur représente sa compétence
 ## Le principe d'Elo appliqué
 
 Dans le système Elo, si deux adversaires, Alice et Bob, possèdent des scores Elo respectifs de $A$ et $B$, la probabilité qu’Alice l’emporte est donnée par la formule suivante :  
-$P(A, B) = \frac{1}{1 + 10^{\frac{B - A}{k}}},$
+$P(A, B) = \frac{1}{1 + 10^{\frac{B - A}{w}}},$
 
-où $k$ est une constante définissant l’échelle de mesure, pour les échecs, $k = 400$. Dans le système E3, nous fixons $k = 5$ pour rendre le système utilisable avec nos dés.
+où $w$ est une constante définissant l’échelle de mesure (appelé largeur ou width). Pour les échecs $w = 400$. Dans le système E3, nous fixons $w = 5$ pour rendre le système utilisable avec nos dés.
 
 **Exemple :**  
 Si Alice possède une compétence d’escrime de 17 et Bob une compétence de 15, la probabilité qu’Alice l’emporte selon la formule est :  
@@ -17,10 +17,10 @@ $P(17, 15) = \frac{1}{1 + 10^{\frac{15 - 17}{5}}} \approx 71,5\%.$
 
 ## Résolution avec le système E3
 
-Pour traduire cette probabilité en jeu, chaque personnage lance **3d6** et ajoute le résultat à son score de compétence. Voici comment cela fonctionne dans notre exemple :
+Pour traduire cette probabilité en jeu, chaque personnage lance **3d6** et ajoute le résultat à son score de compétence + caractéristique. Voici comment cela fonctionne dans notre exemple :
 
-- **Alice** : lance \( 3d6 \) et ajoute 17 (sa compétence d’escrime).  
-- **Bob** : lance \( 3d6 \) et ajoute 15 (sa compétence d’escrime).  
+- **Alice** : lance \( 3d6 \) et ajoute 17 (sa compétence d’escrime + sa dextérité).  
+- **Bob** : lance \( 3d6 \) et ajoute 15 (sa compétence d’escrime + sa dextérité).  
 
 Le vainqueur est celui qui obtient le score final le plus élevé.  
 
@@ -28,6 +28,7 @@ Le vainqueur est celui qui obtient le score final le plus élevé.
 
 Cette méthode produit une distribution probabiliste des résultats qui correspond étroitement à celle calculée avec le système Elo. 
 Pour notre exemple, la probabilité que Bob dépasse Alice reste très proche de 28 %, comme attendu.
+Je calcule cette probabilité et faisant (Nombre de cas où Bob gagne) / (Nombre de cas où Alice gagne + Nombre de cas où Bob gagne), de façon à supprimer le cas des égalités.
 
 En fait, le delta entre les deux probabilités (celle attendue par le système Elo et celle obtenue par le lancer des dés) est toujours inférieure à 2,15%.
 
