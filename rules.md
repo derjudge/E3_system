@@ -13,7 +13,7 @@ où $w$ est une constante définissant l’échelle de mesure (appelé largeur o
 
 **Exemple :**  
 Si Alice possède une compétence d’escrime de 17 et Bob une compétence de 15, la probabilité qu’Alice l’emporte selon la formule est :  
-$P(17, 15) = \frac{1}{1 + 10^{\frac{15 - 17}{5}}} \approx 71,5\%.$
+$P(17, 15) = \frac{1}{1 + 10^{\frac{15 - 17}{5}}} \approx 0,715 .$
 
 ## Résolution avec le système E3
 
