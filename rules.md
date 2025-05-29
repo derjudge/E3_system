@@ -140,7 +140,7 @@ Puis distribuer un certain nombre de points d'expérience qui dépend de la natu
 | 13 | 91 |   
 | 14 | 105 |  
 | 15 | 120 |  
-| $n$ | $n \times (n + 1)$ |
+| $n$ | $n \times (n + 1) / 2$ |
 
 
 
