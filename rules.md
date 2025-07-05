@@ -9,11 +9,11 @@ Dans le cadre des échecs, le score Elo d’un joueur représente sa compétence
 Dans le système Elo, si deux adversaires, Alice et Bob, possèdent des scores Elo respectifs de $A$ et $B$, la probabilité qu’Alice l’emporte est donnée par la formule suivante :  
 $P(A, B) = \frac{1}{1 + 10^{\frac{B - A}{w}}},$
 
-où $w$ est une constante définissant l’échelle de mesure (appelé largeur ou width). Pour les échecs $w = 400$. Dans le système E3, nous fixons $w = 5$ pour rendre le système utilisable avec nos dés.
+où $w$ est une constante définissant l’échelle de mesure (appelé largeur ou width). Pour les échecs $w = 400$. Dans le système E3, nous fixons $w = 4$ pour rendre le système utilisable avec nos dés.
 
 **Exemple :**  
 Si Alice possède une compétence d’escrime de 17 et Bob une compétence de 15, la probabilité qu’Alice l’emporte selon la formule est :  
-$P(17, 15) = \frac{1}{1 + 10^{\frac{15 - 17}{5}}} \approx 0,715 .$
+$P(17, 15) = \frac{1}{1 + 10^{\frac{15 - 17}{4}}} \approx 0,75 .$
 
 ## Résolution avec le système E3
 
@@ -27,12 +27,12 @@ Le vainqueur est celui qui obtient le score final le plus élevé.
 - En cas d’égalité, l’action peut être considérée comme un échec mutuel ou une impasse (selon le contexte narratif).  
 
 Cette méthode produit une distribution probabiliste des résultats qui correspond étroitement à celle calculée avec le système Elo. 
-Pour notre exemple, la probabilité que Bob dépasse Alice reste très proche de 28 %, comme attendu.
+Pour notre exemple, la probabilité que Bob dépasse Alice reste très proche de 25 %, comme attendu.
 Je calcule cette probabilité et faisant (Nombre de cas où Bob gagne) / (Nombre de cas où Alice gagne + Nombre de cas où Bob gagne), de façon à supprimer le cas des égalités.
 
 En fait, le delta entre les deux probabilités (celle attendue par le système Elo et celle obtenue par le lancer des dés) est toujours inférieure à 2,15%.
 
-Pour faire la translation entre le système Elo aux échecs et le système E3 on peut faire simplement  $\frac{Elo}{80} - 10$. Ce qui donne :
+Pour faire la translation entre le système Elo aux échecs et le système E3 on peut faire simplement  $\frac{Elo}{100} - 10$. Ce qui donne :
   - Débutant un peu nul : 0
   - Débutant avec quelques parties : 2
   - Joueur Amateur : 5
