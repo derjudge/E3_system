@@ -9,11 +9,11 @@ Dans le cadre des échecs, le score Elo d’un joueur représente sa compétence
 Dans le système Elo, si deux adversaires, Alice et Bob, possèdent des scores Elo respectifs de $A$ et $B$, la probabilité qu’Alice l’emporte est donnée par la formule suivante :  
 $P(A, B) = \frac{1}{1 + 10^{\frac{B - A}{w}}},$
 
-où $w$ est une constante définissant l’échelle de mesure (appelé largeur ou width). Pour les échecs $w = 400$. Dans le système E3, nous fixons $w = 4$ pour rendre le système utilisable avec nos dés.
+où $w$ est une constante définissant l’échelle de mesure (appelé largeur ou width). Pour les échecs $w = 400$. Dans le système E3, nous fixons $w \approx 5$ pour rendre le système utilisable avec nos dés.
 
 **Exemple :**  
 Si Alice possède une compétence d’escrime de 17 et Bob une compétence de 15, la probabilité qu’Alice l’emporte selon la formule est :  
-$P(17, 15) = \frac{1}{1 + 10^{\frac{15 - 17}{4}}} \approx 0,75 .$
+$P(17, 15) = \frac{1}{1 + 10^{\frac{15 - 17}{5}}} \approx 0,7597 .$
 
 ## Résolution avec le système E3
 
@@ -26,9 +26,9 @@ Le vainqueur est celui qui obtient le score final le plus élevé.
 
 - En cas d’égalité, l’action peut être considérée comme un échec mutuel ou une impasse (selon le contexte narratif).  
 
-Cette méthode produit une distribution probabiliste des résultats qui correspond étroitement à celle calculée avec le système Elo. 
+Cette méthode produit une distribution de probabilités qui correspond assez étroitement à celle calculée avec le système Elo. 
 Pour notre exemple, la probabilité que Bob dépasse Alice reste très proche de 25 %, comme attendu.
-Je calcule cette probabilité et faisant (Nombre de cas où Bob gagne) / (Nombre de cas où Alice gagne + Nombre de cas où Bob gagne), de façon à supprimer le cas des égalités.
+**NB:** On calcule cette probabilité et faisant (Nombre de cas où Bob gagne) / (Nombre de cas où Alice gagne + Nombre de cas où Bob gagne), de façon à supprimer le cas des égalités.
 
 En fait, le delta entre les deux probabilités (celle attendue par le système Elo et celle obtenue par le lancer des dés) est toujours inférieure à 2,15%.
 
@@ -50,7 +50,7 @@ Pour faire la translation entre le système Elo aux échecs et le système E3 on
 Pour mesurer l'échelle des compétences sur autre chose que les échecs, on peut s'inspirer de la précédente table et avoir :
   - débutant nul : 0
   - amateur (quelques dizaines d'heures) : 3
-  - amateur intermédiare (une centaine d'heures d'étude et de pratiques) : 6
+  - amateur intermédiaire (une centaine d'heures d'étude et de pratiques) : 6
   - amateur éclairé (quelques centaines d'heures) : 10
   - professionnel moyen, doctorant : 13
   - professionnel, top 10% : 15
@@ -80,3 +80,6 @@ Lorsque les **trois dés affichent le même résultat** (par exemple, trois 4 ou
 Lorsque les **trois dés affichent une suite** (1-2-3, 2-3-4, 3-4-5 ou 4-5-6), un événement vient modérer le résultat. La probabilité d'un tel imprévu est **11,11%**.
 Généralement, le succès vient avec un prix et les échecs viennent avec une petite compensation. 
 
+
+
+##
