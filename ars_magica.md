@@ -22,43 +22,66 @@ compétence + caractéristiques + 3d6
 Pour créer un personnage débutant, distribuer 7 points de caractéristiques parmi les 8 caractéristiques.
 
 | score | coût |
-|:--:|:--:|
-| -3 | -6 |
-| -2 | -3 |
-| -1 | -1 |
-| 0 | 0 |
-| +1 | 1 |
-| +2 | 2 |
-| +3 | 3 |
+| :---: | :--: |
+|  -3   |  -6  |
+|  -2   |  -3  |
+|  -1   |  -1  |
+|   0   |  0   |
+|  +1   |  1   |
+|  +2   |  2   |
+|  +3   |  3   |
 
 Puis distribuer un certain nombre de points d'expérience qui dépend de la nature de vos personnages : 
-| nature | nombre de points de compétences | Niveau maximum de compétence |
-|:-|:-|:-|
-| débutant | 350 | 10 |
-| aguerri | 450 | 14 |
-| vétéran | 600 | 18 |
-| héroïque | 800 | 22 |
-| légendaire | 1000 | - |
 
-| score | coût |
-|:--:|:--:|
-| 1 | 1 |     
-| 2 | 3 |     
-| 3 | 6 |     
-| 4 | 10 |    
-| 5 | 15 |    
-| 6 | 21 |    
-| 7 | 28 |    
-| 8 | 36 |    
-| 9 | 45 |    
-| 10 | 55 |   
-| 11 | 66 |   
-| 12 | 78 |   
-| 13 | 91 |   
-| 14 | 105 |  
-| 15 | 120 |  
-| $n$ | $n \times (n + 1) / 2$ |
+| nature     | nombre de points de compétences | Niveau maximum de compétence |
+| :--------- | :------------------------------ | :--------------------------- |
+| débutant   | 350                             | 10                           |
+| aguerri    | 450                             | 14                           |
+| vétéran    | 600                             | 18                           |
+| héroïque   | 800                             | 22                           |
+| légendaire | 1000                            | -                            |
 
+| score |                coût                 |     |
+| :---: | :---------------------------------: | --- |
+|   1   |                  1                  |     |
+|   2   |                  3                  |     |
+|   3   |                  6                  |     |
+|   4   |                 10                  |     |
+|   5   |                 15                  |     |
+|   6   |                 21                  |     |
+|   7   |                 28                  |     |
+|   8   |                 36                  |     |
+|   9   |                 45                  |     |
+|  10   |                 55                  |     |
+|  11   |                 66                  |     |
+|  12   |                 78                  |     |
+|  13   |                 91                  |     |
+|  14   |                 105                 |     |
+|  15   |                 120                 |     |
+|  $n$  | $n^{\Delta} = n \times (n + 1) / 2$ |     |
+
+
+Pour créer un compagnon ou un mage :
+ * Choisir entre 1 et 5 points de défauts.
+ * Choisir le double en point d'atout.
+ * Les mages gagnent un atout gratuit grâce à sa maison
+
+## Endurance
+L'endurance est le système qui remplace la fatigue.
+Arriver à 0 point d'endurance le personnage tombe inconscient et est hors-jeu.
+Le nombre de point d'endurance au départ est donné par sa caractéristique Energie
+
+Quelque soit son énergie, à 10 points d'endurance ou en dessous, le personnage aura un -1 à tout ses jets. A partir de 5 points d'endurance restant ou moins il aura -3 à tout ses jets.
+
+| Energie | Endurance de départ |
+| :-----: | :-----------------: |
+|   -3    |         18          |
+|   -2    |         21          |
+|   -1    |         23          |
+|    0    |         24          |
+|    1    |         25          |
+|    2    |         27          |
+|    3    |         30          |
 
 
 
