@@ -1,6 +1,6 @@
 # Système E3 pour Ars Magica
 
-Le système E3 repose sur des caractèristiques, représentant les capacités et les facilités du personnage et sur une liste de compétences, correspondant à ses acquis.
+Le système E3 repose sur des caractéristiques, représentant les capacités et les facilités du personnage et sur une liste de compétences, correspondant à ses acquis.
 Si vous voulez composer votre propre système E3, en tant que MJ, à vous de choisir votre propre liste de compétences et de caractéristiques.
 Les caractéristiques devrait avoir un score entre -3 (très faible) et +3 (très fort), passant par 0 (moyen). Elles ne peuvent quasiment pas évoluer dans la progression de la campagne. 
 Tandis que les compétences ont une échelle ouverte commençant à 0 et n'ayant pas de maximum théorique.

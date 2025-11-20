@@ -50,7 +50,7 @@ Pour faire la translation entre le système Elo aux échecs et le système E3 on
 Pour mesurer l'échelle des compétences sur autre chose que les échecs, on peut s'inspirer de la précédente table et avoir :
   - débutant nul : 0
   - amateur (quelques dizaines d'heures) : 3
-  - amateur intermédiare (une centaine d'heures d'étude et de pratiques) : 6
+  - amateur intermédiaire (une centaine d'heures d'étude et de pratiques) : 6
   - amateur éclairé (quelques centaines d'heures) : 10
   - professionnel moyen, doctorant : 13
   - professionnel, top 10% : 15
