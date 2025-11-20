@@ -1,4 +1,3 @@
-
 # Système E3 pour Ars Magica
 
 Le système E3 repose sur des caractèristiques, représentant les capacités et les facilités du personnage et sur une liste de compétences, correspondant à ses acquis.
@@ -7,7 +6,7 @@ Les caractéristiques devrait avoir un score entre -3 (très faible) et +3 (trè
 Tandis que les compétences ont une échelle ouverte commençant à 0 et n'ayant pas de maximum théorique.
 
 E3 a été pensé pour être un système alternatif à ars magica 5eme édition et pour avoir une correspondance entre les deux systèmes.
-Pour une compétence de Ars Magica vers E3, muliplié la compétence par 10 et diviser le résultat par 3 (et arrondir au plus proche).
+Pour une compétence de Ars Magica vers E3, multiplié la compétence par 10 et diviser le résultat par 3 (et arrondir au plus proche).
   * 0 -> 0
   * 1 -> 3
   * 2 -> 6
@@ -60,6 +59,13 @@ Puis distribuer un certain nombre de points d'expérience qui dépend de la natu
 | 15 | 120 |  
 | $n$ | $n \times (n + 1) / 2$ |
 
+
+
+
+## Confiance
+
+Le joueur peut dépenser un point de confiance pour ajouter +3 à un jet. Il doit justifier quel trait de caractère de son personnage est déclenché par la situation.
+Le point dépensé est récupéré quand le personnage réussi un objectif personnel.
 
 
 
