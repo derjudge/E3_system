@@ -1,12 +1,11 @@
 # Système E3 pour Ars Magica
 
 Le système E3 repose sur des caractéristiques, représentant les capacités et les facilités du personnage et sur une liste de compétences, correspondant à ses acquis.
-Si vous voulez composer votre propre système E3, en tant que MJ, à vous de choisir votre propre liste de compétences et de caractéristiques.
-Les caractéristiques devrait avoir un score entre -3 (très faible) et +3 (très fort), passant par 0 (moyen). Elles ne peuvent quasiment pas évoluer dans la progression de la campagne. 
+Les caractéristiques devrait avoir un score entre -3 (très faible) et +3 (très fort), passant par 0 (moyen). Elles ne peuvent quasiment pas évoluer dans la progression de la campagne (ou alors vers le bas, car la vieillesse).
 Tandis que les compétences ont une échelle ouverte commençant à 0 et n'ayant pas de maximum théorique.
 
 E3 a été pensé pour être un système alternatif à ars magica 5eme édition et pour avoir une correspondance entre les deux systèmes.
-Pour une compétence de Ars Magica vers E3, multiplié la compétence par 10 et diviser le résultat par 3 (et arrondir au plus proche).
+Pour une compétence de Ars Magica vers E3, multiplié la compétence par 10 et diviser le résultat par 3 (et arrondir au plus proche). 
   * 0 -> 0
   * 1 -> 3
   * 2 -> 6
@@ -17,7 +16,25 @@ Pour une compétence de Ars Magica vers E3, multiplié la compétence par 10 et 
 
 Pour calculer le score final pour un test de caractéristiques faites : 
 
-compétence + caractéristiques + 3d6
+Compétence + Caractéristiques + 3d6 vs un seuil de difficulté
+
+| Difficulté         | AM5 | E3  |
+| ------------------ | --- | --- |
+| trivial            | 0   | 6   |
+| simple             | 3   | 9   |
+| facile             | 6   | 12  |
+| moyen              | 9   | 15  |
+| difficile          | 12  | 18  |
+| très difficile     | 15  | 21  |
+| impressionant      | 18  | 24  |
+| remarquable        | 21  | 27  |
+| presque impossible | 24+ | 30+ |
+
+Quand un jet est en opposition (par exemple combat, jeu d'échecs, certamen...)
+
+Compétence + Caractéristiques + 3d6 opposant 1 vs Compétence + Caractéristiques + 3d6 opposant 2
+En cas d'égalité, aucun des deux adversaires ne remporte le match.
+
 
 Pour créer un personnage débutant, distribuer 7 points de caractéristiques parmi les 8 caractéristiques.
 
@@ -41,6 +58,8 @@ Puis distribuer un certain nombre de points d'expérience qui dépend de la natu
 | héroïque   | 800                             | 22                           |
 | légendaire | 1000                            | -                            |
 
+Toutes les compétences de E3 évoluent comme les compétences accélérés du système AM5.
+
 | score |                coût                 |     |
 | :---: | :---------------------------------: | --- |
 |   1   |                  1                  |     |
@@ -59,7 +78,6 @@ Puis distribuer un certain nombre de points d'expérience qui dépend de la natu
 |  14   |                 105                 |     |
 |  15   |                 120                 |     |
 |  $n$  | $n^{\Delta} = n \times (n + 1) / 2$ |     |
-
 
 Pour créer un compagnon ou un mage :
  * Choisir entre 1 et 5 points de défauts.
